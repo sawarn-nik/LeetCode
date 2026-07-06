@@ -11,7 +11,7 @@
 class Solution {
 public:
     ListNode* insertionSortList(ListNode* head) {
-        ListNode * dummy = new ListNode(-5001);
+        ListNode * dummy = new ListNode(-1);
         ListNode * temp = head;
         while(temp)
         {
@@ -25,6 +25,5 @@ public:
             temp = temp->next;
         }
         return dummy->next;
-
     }
 };
