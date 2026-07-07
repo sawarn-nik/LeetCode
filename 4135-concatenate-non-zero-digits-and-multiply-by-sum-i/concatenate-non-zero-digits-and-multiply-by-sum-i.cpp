@@ -4,18 +4,12 @@ public:
         long long res = 0;
         long long x = 0;
         long long sum = 0;
-        stack<long long> st;
-        while(n){
-            if(n%10){
-                sum+=n%10;
-                st.push(n%10);
-            }
-            n/=10;
-        }
-        while(!st.empty()){
-            x+=st.top();
+        string tem = to_string(n);
+        for(int i = 0; i < tem.length(); i++){
+            if(tem[i] == '0') continue;
+            x += tem[i] - '0';
             x*=10;
-            st.pop();
+            sum += tem[i]-'0';
         }
         x/=10;
         res = x*sum;
