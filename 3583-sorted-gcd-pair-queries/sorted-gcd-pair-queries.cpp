@@ -1,22 +1,3 @@
-// class Solution {
-// public:
-//     vector<int> gcdValues(vector<int>& nums, vector<long long>& queries) {
-//         int n = nums.size();
-//         vector<int> temp;
-//         for(int i = 0; i < n; i++){
-//             for(int j = i+1; j < n; j++){
-//                 temp.push_back(__gcd(nums[i],nums[j]));
-//             }
-//         }
-//         sort(temp.begin(),temp.end());
-//         vector<int> res(queries.size(),0);
-//         for(int i = 0; i < queries.size(); i++){
-//             res[i] = temp[queries[i]];
-//         }
-//         return res;
-//     }
-// };
-
 class Solution {
 public:
     vector<int> gcdValues(vector<int>& nums, vector<long long>& queries) {
