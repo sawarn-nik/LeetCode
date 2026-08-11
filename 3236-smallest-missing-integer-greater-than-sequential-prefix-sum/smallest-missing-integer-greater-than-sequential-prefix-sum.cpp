@@ -13,7 +13,7 @@ public:
             else break;      
         }
         cout<<sum<<endl;
-        for(int i = sum; i <= INT_MAX; i++)
+        for(int i = sum; i <= 12575; i++)
         {
             if(mp[i] == 0) return i;
         }
